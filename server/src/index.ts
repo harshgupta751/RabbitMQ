@@ -14,6 +14,7 @@ await channel.assertQueue(queue,{
  )
 
 for(let i=0;i<20;i++){
+  
   channel.sendToQueue(queue, Buffer.from(JSON.stringify({
     submissionID: 1234
   })), {

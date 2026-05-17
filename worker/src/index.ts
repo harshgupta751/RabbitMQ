@@ -19,11 +19,9 @@ channel.prefetch(1)
 
     channel.ack(message as ConsumeMessage)
     console.log("Task completed")
-}
-,{
+},{
     noAck: false
-}
-)
+})
 
 }
 
